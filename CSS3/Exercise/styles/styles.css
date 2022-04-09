@@ -1,0 +1,118 @@
+
+body{
+  margin-left: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.8em;
+  margin:0;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+.section1{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.section1 h1{
+    color:red;
+    padding-left: 10px;
+}
+/* Box Model */
+.section1 p{
+    padding: 20px 10px 15px 20px;
+}
+
+.section2{
+    margin:20px;
+    border:20px;
+    padding:20px;
+    text-align:justify;
+}
+
+.section2 h1{
+    text-align: center;
+}
+ 
+.block {
+    float:left;
+    width:33.3%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float:left;
+    width: 60%;
+}
+
+#side-block{
+    float:right;
+    width:40%;
+    background-color: #000;
+    color:#fff;
+}
+#second_header {
+    color: red;
+}
+input[type="button"]:hover {
+    color:white;
+    background-color:#000;
+    border-radius: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+.box{
+    width: 900px;
+    height: 500px;
+    border: 3px solid #000;
+    background-image: url(../../Demo/images/bgimage.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+
+}
+
+
+.box h1{
+    position: absolute;
+    top:400px;
+    left:500px;
+
+}
+
+.my-list{
+
+}
+
+.my-list ul{
+    list-style: none;
+    padding-left: 40px;
+}
+
+.my-list li{
+    list-style-image: url("../images/check.png");
+    background-color: #1ef3f5;
+}
+
+.my-list li:first-child{
+    background-color: #f61919;
+}
+.my-list li:last-child{
+    background-color: #06f919;
+}
+
+.my-list li:nth-child(4){
+    background-color: #0000ff;
+}
