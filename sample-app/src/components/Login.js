@@ -10,17 +10,20 @@ export class Welcome extends Component{
     
       this.state = {
          textValue:'',
+         text: '',
          name: props.name,
       }
     }
     handleChange = (e) => {
         //console.log(e.target.value)
         this.setState({textValue: e.target.value})
+        
     }
     
     handleClick = (event) => {
         //console.log('Clicked on Button',event.target)
         console.log(this.state.textValue)
+        this.setState({text:this.state.textValue})
     }
     
     render() {
@@ -28,11 +31,13 @@ export class Welcome extends Component{
             <div>
                 <h1> Hi, Hello {this.state.name}</h1>
              <label>Enter some text</label>
-             <input type="text" id="input1" value={this.state.textValue} onChange={this.handleChange}
+             <input type="text" id="input1" 
+             value={this.state.textValue} onChange={this.handleChange}
                  />
              <br/>
              
-             
+             <label id='resultText'>{this.state.text}</label>
+             <br/>
              <input type="button" value='Click' onClick={this.handleClick}/>
         </div>
         )
