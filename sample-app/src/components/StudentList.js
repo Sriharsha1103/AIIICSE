@@ -1,11 +1,12 @@
 import { Component } from "react";
 import "./myStyle.css";
+//Statefull Components
 class StudentList extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      regdNo: 0,
+      regdNo: '',
       name: "",
       student: []
     };
@@ -16,9 +17,9 @@ class StudentList extends Component {
         name: this.state.name}
         //console.log(myStudent.regdNo, myStudent.name)
     this.setState(prevState => ({
-         student: [...prevState.student,myStudent]
+         student: [...prevState.student,myStudent],
     }))
-    console.log(this.state.student)
+    
   }
   handleChange = (e) => {
     const value = e.target.value
@@ -60,11 +61,11 @@ class StudentList extends Component {
               <td>Regd.No.</td>
               <td>Name</td>
             </tr>
+            
            {
-             
-               this.state.student.map((row,index)=>
+               this.state.student.map((row)=>
                    (
-                    <tr>
+                    <tr key={row.regdNo}>
                     <td>{row.regdNo}</td>
                     <td>{row.name}</td>
                     </tr>
