@@ -1,0 +1,10 @@
+.container{
+    padding: 5px;
+    display:flex;
+    align-items: center;
+}
+.box{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+}
