@@ -1,17 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import DisplayArray from './components/DisplayArray/DisplayArray';
-import ChangeColor from './components/ClassComponents/ChangeColor';
-import Parent from './components/StatelessComponents/Parent';
-import Mounting from './components/ClassComponents/LifeCycle/Mounting';
+import PureComponentDemo from './components/ClassComponents/LifeCycle/PureComponent';
+import UserComponent from './components/ClassComponents/UserComponent';
 
 function App() {
   return (
     <div className="App">
-      {/* <DisplayArray /> */}
-      {/* <ChangeColor /> */}
-     {/*  <Parent /> */}
-     <Mounting color='white'/>
+      <UserComponent />
+      <PureComponentDemo />
     </div>
   );
 }
