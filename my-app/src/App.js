@@ -1,14 +1,13 @@
 import './App.css';
-import PureComponentDemo from './components/ClassComponents/LifeCycle/PureComponent';
-import UserComponent from './components/ClassComponents/UserComponent';
+import React from 'react'
+import PersonComponent from './components/FunctionalComponents/PersonComponent';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <UserComponent />
-      <PureComponentDemo />
+    <div className='App'>
+      <PersonComponent />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

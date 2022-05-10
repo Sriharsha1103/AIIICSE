@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './LifeCycle/myStyles.css'
 export class EmailComponent extends Component {
     constructor(props) {
       super(props)
