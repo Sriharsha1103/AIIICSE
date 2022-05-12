@@ -1,11 +1,14 @@
 import './App.css';
 import React from 'react'
-import PersonComponent from './components/FunctionalComponents/PersonComponent';
+import ChangeName from './components/ClassComponents/ChangeName';
+import ChangeName1 from './components/FunctionalComponents/ChangeName'
+
 
 const App = () => {
   return (
     <div className='App'>
-      <PersonComponent />
+     <ChangeName />
+     <ChangeName1 />
     </div>
   )
 }
