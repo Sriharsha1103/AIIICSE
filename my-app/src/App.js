@@ -1,14 +1,12 @@
 import './App.css';
 import React from 'react'
-import ChangeName from './components/ClassComponents/ChangeName';
-import ChangeName1 from './components/FunctionalComponents/ChangeName'
+import UseEffectHookDemo from './components/FunctionalComponents/UseEffectHookDemo';
 
 
 const App = () => {
   return (
     <div className='App'>
-     <ChangeName />
-     <ChangeName1 />
+      <UseEffectHookDemo />
     </div>
   )
 }

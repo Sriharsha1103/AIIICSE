@@ -9,7 +9,7 @@ function ChangeName1() {
               setText(`Welcome : ${input}`)
               console.log('Set Timeout Functional Compoennt')
         },2000);
-    },[–])
+    },[])
   return (
     <div>
         <input type='text' onChange={(e)=> setInput(e.target.value)}/>
