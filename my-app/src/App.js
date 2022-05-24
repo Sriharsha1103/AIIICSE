@@ -1,12 +1,19 @@
 import './App.css';
-import React from 'react'
-import UseEffectHookDemo from './components/FunctionalComponents/UseEffectHookDemo';
+import React, { createContext } from 'react'
+import { BrowserRouter, Router, Route } from 'react-router-dom';
+import {MyClock} from './components/ClassComponents/MyClock'
 
 
+export const MyContext = createContext()
 const App = () => {
   return (
     <div className='App'>
-      <UseEffectHookDemo />
+     <BrowserRouter>
+      <Router>
+        <Route path='/' element={<MyClock />}/>
+        <Route index element={}/>
+      </Router>
+     </BrowserRouter>
     </div>
   )
 }
